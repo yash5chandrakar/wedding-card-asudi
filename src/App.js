@@ -53,7 +53,7 @@ function App() {
   const slideItems = [
     {
       imageSrc: image1,
-      label: "Father",
+      label: "Sister",
     },
     {
       imageSrc: image2,
@@ -65,11 +65,11 @@ function App() {
     },
     {
       imageSrc: image4,
-      label: "BIL",
+      label: "Aunt",
     },
     {
       imageSrc: image5,
-      label: "Mother",
+      label: "Father",
     },
   ];
 
@@ -239,6 +239,9 @@ function App() {
           </section>
         </div>
       </div>
+      <p className="text-center copyright-text">
+        Copyright 2024 All Rights Reserved. - YKC
+      </p>
     </div>
   );
 }

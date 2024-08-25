@@ -10,7 +10,7 @@
 }
 
 .leftContainer{
-  background-image:url("../src//assets/caleb-ekeroth-wSBQFWF77lI-unsplash.jpg");
+  background-image:url("../src/assets/caleb-ekeroth-wSBQFWF77lI-unsplash.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -89,6 +89,10 @@
   text-shadow: 1px 1px gray;
 }
 
+.copyright-text{
+  display: none;
+}
+
 @media only screen and (max-width: 864px) {
   .mainContainer{
     display: flex;
@@ -102,5 +106,10 @@
   }
   .rightContainer{
     width: 100%;
+    overflow: initial;
+  }
+  .copyright-text{
+    display: block;
+    margin-bottom: 2px;
   }
 }
