@@ -1,0 +1,106 @@
+*,body{
+  margin: 0;
+  padding: 0;
+}
+
+.mainContainer{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.leftContainer{
+  background-image:url("../src//assets/caleb-ekeroth-wSBQFWF77lI-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  max-height: 100vh;
+  width: 50%;
+}
+
+.rightContainer{
+  max-height: 100vh;
+  overflow: auto;
+  width: 50%;
+}
+
+.card-body{
+  border: 1px dashed #f8857e;
+  background-color: #fdf5f5;
+}
+
+.rightContainer h1,h3,h5,p{
+  color: #24298f;
+}
+
+.leftContainer h1{
+  color: #f5f3f7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 1px 1px black;
+  font-size: 7vh;
+}
+.leftContainer h4{
+  color: #f3f3f7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 1px 1px black;
+  font-size: 4vh;
+}
+
+.leftContainer p{
+  color: #f3f3f7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 1px 1px black;
+}
+
+.timer-body{
+  border: 1px dashed #eddedd;
+  padding: 15px;
+}
+
+.timer-body p{
+  margin-bottom: 0;
+  padding: 2px;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.timer-body span{
+  color: #f7736a;
+  font-size: 3vh;
+}
+.timer-body div{
+  color: #f7736a;
+  font-size: 3vh;
+}
+
+.carousel-card{
+  padding: 10px;
+  margin: 10px;
+  width: 80%;
+}
+
+.carousel-card img{
+  background-size: cover;
+  max-width: 300px;
+}
+
+.carousel-card h6{
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 1px 1px gray;
+}
+
+@media only screen and (max-width: 864px) {
+  .mainContainer{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+  .leftContainer{
+    background-image:url("../src//assets/caleb-ekeroth-wSBQFWF77lI-unsplash.jpg");
+    background-size: cover;
+    width: 100%;
+  }
+  .rightContainer{
+    width: 100%;
+  }
+}
