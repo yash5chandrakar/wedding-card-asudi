@@ -84,7 +84,7 @@ function App() {
             <div className="d-flex gap-3 text-center">
               {timerData?.isEventOver ? (
                 <>
-                  <h4>Bless the Happy Couple for married life ahead.</h4>
+                  <h4>Bless the Happy Couple for married life ahead</h4>
                 </>
               ) : (
                 <>
