@@ -26,7 +26,7 @@ function App() {
     isEventOver: false,
   });
   const getTimeRemaining = (e) => {
-    const total = Date.parse(new Date("2024-12-08")) - Date.parse(new Date());
+    const total = Date.parse(new Date("2024-12-10")) - Date.parse(new Date());
     const days = Math.floor(total / 1000 / 60 / 60 / 24);
     const seconds = Math.floor((total / 1000) % 60);
     const minutes = Math.floor((total / 1000 / 60) % 60);
