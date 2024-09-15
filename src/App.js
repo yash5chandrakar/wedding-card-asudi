@@ -109,7 +109,7 @@ function App() {
         <div className="rightContainer p-3">
           <section className="d-flex flex-column justify-content-center align-items-center">
             <div className="p-3 d-flex flex-column justify-content-center align-items-center text-center">
-              <img className="" src={logo} width={'150px'} />
+              {/* <img className="" src={logo} width={'150px'} /> */}
             </div>
             <div className="card-flow">
               <div className="w-50 p-4 d-flex flex-column justify-content-center align-items-center text-center">
