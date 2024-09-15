@@ -219,9 +219,9 @@ function App() {
                 We are thrilled to announce that our special event will take place at the elegant Samaira Inn Hotel, located in the heart of Pragati Nagar, Risali, Bhilai, Chhattisgarh. <br /><br />
                 <p className="text-center">
                   📍 Venue: Samaira Inn Hotel. <br />
-                  🏙️ Address: Pragati Nagar, Risali, Bhilai, Chhattisgarh.<br /> <br />
+                  🏙️ Address: Pragati Nagar, Risali, Bhilai, Chhattisgarh.
                 </p>
-                <div className=" d-flex justify-content-center mt-4 ">
+                <div className=" d-flex justify-content-center mt-2">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.6598121534303!2d81.32890277529839!3d21.16593238305302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a293df022fdd9ef%3A0x94500eb4406e7b99!2sSamaira%20Inn!5e0!3m2!1sen!2sin!4v1726416293218!5m2!1sen!2sin"
                     width="300"
