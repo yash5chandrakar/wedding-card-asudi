@@ -15,7 +15,8 @@ import image3 from "./assets/portraits/img3.jpg";
 import image4 from "./assets/portraits/img4.jpg";
 import image5 from "./assets/portraits/img5.jpg";
 import logo from "./assets/Asmita_&_Nishant_Logo[1]_page-0001.jpg";
-import image6 from "./assets/portraits/img6.jpg";
+import songFile from "./assets/song.mp3";
+import couple from "./assets/file.png";
 
 function App() {
   const [timerData, setTimerData] = useState({
@@ -26,6 +27,7 @@ function App() {
     seconds: 0,
     isEventOver: false,
   });
+  const [audioPlay, setAudioPlay] = useState(false)
   const getTimeRemaining = (e) => {
     const total = Date.parse(new Date("2024-12-10")) - Date.parse(new Date());
     const days = Math.floor(total / 1000 / 60 / 60 / 24);
@@ -74,8 +76,17 @@ function App() {
     },
   ];
 
+  let audio = new Audio(songFile)
+
+  const handleAudioPlay = () => {
+    if (!audioPlay) {
+      audio.play()
+      setAudioPlay(true)
+    }
+  }
+
   return (
-    <div className="App">
+    <div className="App" onClick={() => handleAudioPlay()}>
       <div className="mainContainer">
         <div className="leftContainer text-center p-3 d-flex flex-column justify-content-end align-items-center">
           <div className="left-text">
@@ -108,8 +119,9 @@ function App() {
         </div>
         <div className="rightContainer p-3">
           <section className="d-flex flex-column justify-content-center align-items-center">
-            <div className="p-3 d-flex flex-column justify-content-center align-items-center text-center">
+            <div className="d-flex flex-column justify-content-center align-items-center text-center">
               {/* <img className="" src={logo} width={'150px'} /> */}
+              <img src={couple} width={'200px'}/>
             </div>
             <div className="card-flow">
               <div className="w-50 p-4 d-flex flex-column justify-content-center align-items-center text-center">
@@ -176,7 +188,7 @@ function App() {
                 <div className="mt-3 card-body">
                   <h5>✨💍Wedding 💍✨</h5>
                   <div>
-                    Join us for a day of love, joy, and celebration as Asmita & Nishant exchange their vows and begin their journey together as a married couple. <br/><br/>
+                    Join us for a day of love, joy, and celebration as Asmita & Nishant exchange their vows and begin their journey together as a married couple. <br /><br />
                     <div className="d-flex justify-content-center gap-2 dateContainer align-items-center">
                       <div className="startDate">&nbsp;<strong>December</strong>&nbsp;</div>
                       <div><strong>10</strong></div>
@@ -199,7 +211,7 @@ function App() {
                 <div className="mt-3 card-body">
                   <h5>🎉 Reception 🎉</h5>
                   <div>
-                    Join us as we toast to the new beginning of Asmita & Nishant's Life & come together to celebrate their love with joy, laughter, and heartfelt toasts.  <br/><br/>
+                    Join us as we toast to the new beginning of Asmita & Nishant's Life & come together to celebrate their love with joy, laughter, and heartfelt toasts.  <br /><br />
                     <div className="d-flex justify-content-center gap-2 dateContainer align-items-center">
                       <div className="startDate">&nbsp;<strong>December</strong>&nbsp;</div>
                       <div><strong>10</strong></div>
@@ -235,7 +247,7 @@ function App() {
               </p>
             </div>
             <div className="p-3 d-flex flex-column justify-content-center align-items-center">
-              <h3 className="text-center">✨ Chandrakar Family ✨ <br/>✨ Cordially Welcomes You ✨</h3>
+              <h3 className="text-center">✨ Chandrakar Family ✨ <br />✨ Cordially Welcomes You ✨</h3>
               <p>
                 With hearts full of joy and gratitude, we welcome you to join us as we celebrate the union of our beloved Asmita & Nishant.
                 As two souls embark on a beautiful journey together, your presence adds to the love, laughter, and cherished moments that will make this day truly special.
